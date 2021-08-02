@@ -7,6 +7,11 @@ namespace LearningCSharp
     class Arithmatic
     {
 
+        public Arithmatic()
+        {
+            Console.WriteLine("Inside Arithmetic Class");
+        } //Non-Parametrized Ctor
+
        
         public int Add(int a,int b)
         {

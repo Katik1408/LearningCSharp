@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearningCSharp.OOPS;
+using System;
 
 namespace LearningCSharp
 {
@@ -14,13 +15,13 @@ namespace LearningCSharp
         bool IsEmployed = true;
         static void Main(string[] args)
         {
-            yoe = 6;
-            int d = 7;   // Local Variable
+            //yoe = 6;
+            //int d = 7;   // Local Variable
             //Console.WriteLine("Learning CSharp");   // Strings
 
             //ClassName obj = new ClassName(); 
 
-            //Arithmatic arith = new Arithmatic();
+            // Arithmatic arith = new Arithmatic();
 
 
             //Console.WriteLine("Enter a value");
@@ -52,24 +53,24 @@ namespace LearningCSharp
 
 
             //int[] arr = new int[5];
-            string[] cars = new string[5];
-            //arr[0] = 1;
-            //arr[1] = 2;
-            //arr[2] = 3;
-            //arr[3] = 4;
-            //arr[4] = 5;
-            Console.WriteLine("Enter 5  values");
+            //string[] cars = new string[5];
+            ////arr[0] = 1;
+            ////arr[1] = 2;
+            ////arr[2] = 3;
+            ////arr[3] = 4;
+            ////arr[4] = 5;
+            //Console.WriteLine("Enter 5  values");
 
-            for (int i = 0; i < cars.Length; i++)
-            {
-                cars[i] = Console.ReadLine();
-            }
+            //for (int i = 0; i < cars.Length; i++)
+            //{
+            //    cars[i] = Console.ReadLine();
+            //}
 
 
-            for (int i = 0; i < cars.Length; i++)
-            {
-                Console.WriteLine(cars[i]);
-            }
+            //for (int i = 0; i < cars.Length; i++)
+            //{
+            //    Console.WriteLine(cars[i]);
+            //}
 
 
             //foreach (string car in cars)
@@ -77,7 +78,21 @@ namespace LearningCSharp
             //    Console.WriteLine(car);
             //}
 
-            
+
+            Employee e; // Object Reference
+            e = new Employee(1,"John",123445,"Bangalore",new DateTime(2021,1,1));  //Object Instance
+            e.GetEmployeeName();
+
+            Employee e1 = new Employee(2, "Josh", 1234566, "Pune", new DateTime(2020, 4, 21));
+
+            e1.GetEmployeeName();
+
+
+            Employee e2;
+            e2 = new Employee();
+
+            e2.GetEmployeeName();
+
         }
 
         //Function
