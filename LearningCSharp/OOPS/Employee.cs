@@ -11,7 +11,8 @@ namespace LearningCSharp.OOPS
         long Contact;
         string Place;
         DateTime DoJ;
-        DateTime DoB;
+        // DateTime DoB;
+        int d;
 
         //this is a special Keyword which holds the current class object
 
@@ -21,21 +22,20 @@ namespace LearningCSharp.OOPS
         }
 
 
-        public Employee(int EmpId, string Name, long Contact, string Place, DateTime DoJ, DateTime DoB)
+        public Employee(int EmpId, string Name, long Contact, string Place, DateTime DoJ)
         {
             this.EmpId = EmpId;
             this.Name = Name;
             this.Contact = Contact;
             this.Place = Place;
             this.DoJ = DoJ;
-            this.DoB = DoB;
+            //this.DoB = DoB;
         }
 
 
         public void GetEmployeeName()
         {
-
-            Console.WriteLine("EmployeeName --->  {0} DateOfJoining ----> {1} , Age ---> {2} ", Name, DoJ, GetAge(DoB));
+            Console.WriteLine("EmployeeName --->  {0} DateOfJoining ----> {1} , Age ---> {2} ", Name, DoJ);
         }
 
         public int GetAge(DateTime dob)

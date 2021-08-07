@@ -1,5 +1,8 @@
 ﻿using LearningCSharp.OOPS;
 using System;
+using LearningCSharp.OOPS.Inheritence;
+using LearningCSharp.OOPS.Polymorphism;
+using System.Collections;
 
 namespace LearningCSharp
 {
@@ -79,19 +82,36 @@ namespace LearningCSharp
             //}
 
 
-            Employee e; // Object Reference
-            e = new Employee(1,"John",123445,"Bangalore",new DateTime(2021,1,1));  //Object Instance
-            e.GetEmployeeName();
+            //Employee e; // Object Reference
+            //e = new Employee(1,"John",123445,"Bangalore",new DateTime(2021,1,1));  //Object Instance
+            //e.GetEmployeeName();
 
-            Employee e1 = new Employee(2, "Josh", 1234566, "Pune", new DateTime(2020, 4, 21));
+            //Employee e1 = new Employee(2, "Josh", 1234566, "Pune", new DateTime(2020, 4, 21));
 
-            e1.GetEmployeeName();
+            //e1.GetEmployeeName();
 
 
-            Employee e2;
-            e2 = new Employee();
+            //Employee e2;
+            //e2 = new Employee();
 
-            e2.GetEmployeeName();
+            //e2.GetEmployeeName();
+
+
+            //Derived d = new Derived();
+
+            //d.Show();
+
+
+            //Example e = new Example();
+
+            //e.Show();
+            //e.Show("Josh");
+
+
+            B b = new B();
+            b.GetData();
+
+
 
         }
 
